@@ -1,0 +1,180 @@
+:root {
+  --light-background: hsl(195, 55%, 53%);
+  --dark-background: hsl(216, 18%, 16%);
+  --text-color: hsl(0, 0%, 50%);
+}
+
+/* TODO: Highlight latest experience */
+.themeLight{
+  --dark-text-clr: var(--dark-background);
+}
+
+.themeDark{
+  --dark-text-clr: var(--light-background);
+}
+
+#parent-timeline,
+::after,
+::before {
+  --transp-background: hsla(0, 0%, 80%, 0.2);
+  --totalHeight: 300px;
+  --hBarHeight: 20px;
+  --itemOffset: 60px;
+  --vbarOffset: 55px;
+  --flagScale: 0;
+  --flagColor: transparent;
+
+  --vbarHeight: calc(
+    ((var(--totalHeight) - var(--hBarHeight)) / 2) -
+      (var(--itemOffset) + var(--vbarOffset)) + var(--hBarHeight)
+  );
+}
+
+/* ------------------------------------ UPDATE VARIABLE ON HOVER -------------------- */
+#parent-timeline:hover{
+  --itemOffset: 40px;
+  --vbarOffset: 0px;
+  --flagScale: 1;
+  --flagColor: var(--transp-background);
+}
+
+
+#parent-timeline {
+  height: var(--totalHeight);
+  position: relative;
+}
+
+.experience:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0b1";
+  color: var(--dark-text-clr);
+}
+.education:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f19d";
+}
+
+.flagPole-offset {
+  position: relative;
+  transition: top 200ms ease-in-out;
+}
+
+.flagPole {
+  background: var(--transp-background);
+  /* margin: 3px; */
+  height: var(--vbarHeight);
+  /* width: 20px;
+      align-self: center;
+      position: relative;  */
+  transition: 200ms ease-in-out;
+}
+
+.flagPole:before {
+  padding: 5px;
+  display: block;
+}
+
+#timeline-bar {
+  background: var(--transp-background);
+  width: 100%;
+  height: 20px;
+  /* margin-top: 10px; */
+  position: absolute;
+  top: calc(50% - (var(--hBarHeight) / 2));
+  display: flex;
+  justify-content: space-between;
+  font-size: smaller;
+}
+
+#timeline-bar p {
+  margin: auto 0;
+}
+
+#timeline-elements {
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  text-align: right;
+  /* overflow: overlay; */
+  white-space: nowrap;
+  /* position: relative; */
+}
+
+.timelineItem {
+  display: flex;
+  /* margin: 0 10px; */
+  /* margin-bottom: 40px; */
+  position: relative;
+  /* top: -2px; */
+  transition: 200ms ease-in-out;
+}
+
+.flagContents {
+  position: relative;
+}
+
+.flagContents > * {
+  margin: 5px;
+}
+
+.flagContents::before {
+  content: ".";
+  z-index: -1;
+  font-size: 0;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  border-radius: 10px 0 0 10px;
+  transition: 200ms ease-in-out;
+  transform: scale(0);
+  transform-origin: 100% 0;
+}
+#parent-timeline:hover .flagContents::before {
+  transform: scale(1);
+  background: hsla(0, 0%, 80%, 0.1);;
+}
+.timelineItem > .flagPole-offset {
+  display: flex;
+}
+
+/* Dynamic Calculation start (odd even pair) */
+
+.timelineItem:nth-child(odd) {
+  top: var(--itemOffset);
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.timelineItem:nth-child(even) {
+  bottom: var(--itemOffset);
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.timelineItem:nth-child(odd) .flagPole-offset {
+  align-self: baseline;
+}
+
+.timelineItem:nth-child(even) .flagPole-offset {
+  align-self: flex-end;
+}
+
+.timelineItem:nth-child(odd) .flagPole {
+  /* display: flex;
+  align-items: baseline; */
+  position: relative;
+  top: var(--vbarOffset);
+}
+
+.timelineItem:nth-child(even) .flagPole{
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  bottom: var(--vbarOffset);
+}
