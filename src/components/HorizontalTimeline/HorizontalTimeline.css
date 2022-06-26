@@ -5,11 +5,11 @@
 }
 
 /* TODO: Highlight latest experience */
-.themeLight{
+.themeLight {
   --dark-text-clr: var(--dark-background);
 }
 
-.themeDark{
+.themeDark {
   --dark-text-clr: var(--light-background);
 }
 
@@ -31,13 +31,12 @@
 }
 
 /* ------------------------------------ UPDATE VARIABLE ON HOVER -------------------- */
-#parent-timeline:hover{
+#parent-timeline:hover {
   --itemOffset: 40px;
   --vbarOffset: 0px;
   --flagScale: 1;
   --flagColor: var(--transp-background);
 }
-
 
 #parent-timeline {
   height: var(--totalHeight);
@@ -46,23 +45,23 @@
 
 .experience:before {
   display: block;
-    content: ' ';
-    background-color: var(--light-background);
-    -webkit-mask-image: url('../../assets/Work.svg');
-    mask-image: url('../../assets/Work.svg');
-    /* background-size: 22px 22px; */
-    height: 22px;
-    width: 22px;
+  content: " ";
+  background-color: var(--light-background);
+  -webkit-mask-image: url("../../assets/Work.svg");
+  mask-image: url("../../assets/Work.svg");
+  /* background-size: 22px 22px; */
+  height: 22px;
+  width: 22px;
 }
 .education:before {
   display: block;
-    content: ' ';
-    background-color: var(--light-background);
-    -webkit-mask-image: url('../../assets/Education.svg');
-    mask-image: url('../../assets/Education.svg');
-    /* background-size: 22px 22px; */
-    height: 22px;
-    width: 22px;
+  content: " ";
+  background-color: var(--light-background);
+  -webkit-mask-image: url("../../assets/Education.svg");
+  mask-image: url("../../assets/Education.svg");
+  /* background-size: 22px 22px; */
+  height: 22px;
+  width: 22px;
 }
 
 .flagPole-offset {
@@ -146,7 +145,7 @@
 }
 #parent-timeline:hover .flagContents::before {
   transform: scale(1);
-  background: hsla(0, 0%, 80%, 0.1);;
+  background: hsla(0, 0%, 80%, 0.1);
 }
 .timelineItem > .flagPole-offset {
   display: flex;
@@ -181,7 +180,7 @@
   top: var(--vbarOffset);
 }
 
-.timelineItem:nth-child(even) .flagPole{
+.timelineItem:nth-child(even) .flagPole {
   display: flex;
   align-items: flex-end;
   position: relative;
