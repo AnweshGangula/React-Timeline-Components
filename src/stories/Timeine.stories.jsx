@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import './styles.css';
-import { Timeline } from "../components/Timeline";
+import { HorizontalTimeline } from "../components/HorizontalTimeline";
 
 const stories = storiesOf('Horizontal Timeline Component', module);
 
@@ -19,7 +19,7 @@ stories.add('Horizontal Timeline', () => {
         ]
 
     return (
-        <Timeline timelineData={timelineJSON} />
+        <HorizontalTimeline timelineData={timelineJSON} />
     );
 })
 

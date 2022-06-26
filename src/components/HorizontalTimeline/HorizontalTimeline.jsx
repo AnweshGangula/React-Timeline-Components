@@ -1,9 +1,8 @@
-import './timeline.css';
+import './HorizontalTimeline.css';
 import { useEffect } from 'react';
 
 
-export const Timeline = (props) => {
-
+export const HorizontalTimeline = (props) => {
   function TimelineElements(props) {
     const entry = props.entry
     return (
