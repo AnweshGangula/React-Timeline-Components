@@ -5,7 +5,7 @@ import { Timeline } from "../components/Timeline";
 
 const stories = storiesOf('Horizontal Timeline Component', module);
 
-stories.add('Timeline', () => { 
+stories.add('Horizontal Timeline', () => { 
     // below timelineJSON variable is a representation of the JSON data that you can store in a separate file
     let timelineJSON = [
         { name: "IIT Kharagpur", title: "B.Arch", duration: "2012-2017", type: "education", category: "academic" },

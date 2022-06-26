@@ -45,15 +45,24 @@
 }
 
 .experience:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f0b1";
-  color: var(--dark-text-clr);
+  display: block;
+    content: ' ';
+    background-color: var(--light-background);
+    -webkit-mask-image: url('../../assets/Work.svg');
+    mask-image: url('../../assets/Work.svg');
+    /* background-size: 22px 22px; */
+    height: 22px;
+    width: 22px;
 }
 .education:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f19d";
+  display: block;
+    content: ' ';
+    background-color: var(--light-background);
+    -webkit-mask-image: url('../../assets/Education.svg');
+    mask-image: url('../../assets/Education.svg');
+    /* background-size: 22px 22px; */
+    height: 22px;
+    width: 22px;
 }
 
 .flagPole-offset {
@@ -72,7 +81,7 @@
 }
 
 .flagPole:before {
-  padding: 5px;
+  margin: 5px;
   display: block;
 }
 
