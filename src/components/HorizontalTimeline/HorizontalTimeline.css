@@ -131,7 +131,6 @@
 
 .flagContents::before {
   content: ".";
-  z-index: -1;
   font-size: 0;
   background: transparent;
   position: absolute;
@@ -145,7 +144,7 @@
 }
 #parent-timeline:hover .flagContents::before {
   transform: scale(1);
-  background: hsla(0, 0%, 80%, 0.1);
+  background: var(--transp-background);
 }
 .timelineItem > .flagPole-offset {
   display: flex;
