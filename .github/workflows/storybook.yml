@@ -1,3 +1,5 @@
+# reference: https://dev.to/kouts/deploy-storybook-to-github-pages-3bij
+
 name: Build and Deploy Storybook
 on: 
   push:
