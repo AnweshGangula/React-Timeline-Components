@@ -15,6 +15,14 @@
   ],
   "author": "Anwesh Gangula",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnweshGangula/React-Timeline-Components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnweshGangula/React-Timeline-Components/issues"
+  },
+  "homepage": "https://github.com/AnweshGangula/React-Timeline-Components#react-timeline-components",
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-react": "^7.18.6",
