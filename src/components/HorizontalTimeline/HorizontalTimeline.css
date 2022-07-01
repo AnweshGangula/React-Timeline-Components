@@ -107,7 +107,7 @@
   gap: 20px;
   justify-content: space-between;
   text-align: right;
-  /* overflow: overlay; */
+  overflow: overlay;
   white-space: nowrap;
   /* position: relative; */
 }
