@@ -1,6 +1,6 @@
 {
   "name": "react-timeline-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React Component that display a timeline of information provided in a JSON format",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
