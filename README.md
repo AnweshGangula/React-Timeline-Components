@@ -22,4 +22,6 @@ You can check out a demo at the [following link](https://anweshgangula.github.io
 npm i react-timeline-components
 ```
 
+After installing the package, you can import the components like this - `import { HorizontalTimeline } from 'react-timeline-components';`
+
 ![Horizontal Timeline Component with code example](./GitHub_Assets/Horizontal_Timeline_Component.jpg)

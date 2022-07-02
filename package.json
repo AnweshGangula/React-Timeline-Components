@@ -4,6 +4,9 @@
   "description": "A React Component that display a timeline of information provided in a JSON format",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
