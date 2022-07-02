@@ -5,7 +5,7 @@
     
 ```
 npm version patch
-git push —-tags
+git push --tags
 ```
 
 after running the above commands in terminal, create a [new release](./React-Timeline-Components/releases/new) in github to trigger the [Github Actions workflow](https://github.com/AnweshGangula/React-Timeline-Components/actions/workflows/npm_publish.yml) to update the package in npm
