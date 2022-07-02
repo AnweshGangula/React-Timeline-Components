@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import "./styles.css";
-import { HorizontalTimeline } from "../components/HorizontalTimeline";
+import { HorizontalTimeline } from "../../src/components/HorizontalTimeline";
 
 const stories = storiesOf("Horizontal Timeline Component", module);
 
