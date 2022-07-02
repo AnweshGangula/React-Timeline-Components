@@ -17,14 +17,7 @@ jobs:
           node-version: 16
       - name: Install dependencies
         # reference: https://stackoverflow.com/a/69984661/6908282
-        run: |
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
+        run: npm i
 
   publish-npm:
     needs: build
