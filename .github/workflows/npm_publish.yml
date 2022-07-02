@@ -28,6 +28,10 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+        
+      - name: Compile build
+        run: npm run build-lib --if-present
+        
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
