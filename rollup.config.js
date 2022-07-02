@@ -25,7 +25,7 @@ export default [
             }),
             babel({
                 exclude: 'node_modules/**',
-                presets: ['@babel/preset-react']
+                presets: [['@babel/preset-react', { runtime: "automatic" }]]
             }),
             external(),
             resolve(),
