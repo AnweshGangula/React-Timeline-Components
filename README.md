@@ -14,13 +14,16 @@ after running the above commands in terminal, create a [new release](./React-Tim
 
 ## Installation
 
-A React Component that display a timeline of information provided in a JSON format
+A React Component that display a timeline of information provided in a JSON format.
 
-You can check out a demo at the [following link](https://anweshgangula.github.io/React-Timeline-Components).
+Install this [npm package](https://www.npmjs.com/package/react-timeline-components) with below command
 
 ```bash
 npm i react-timeline-components
 ```
+
+You can check out a demo at the [following link](https://anweshgangula.github.io/React-Timeline-Components).
+
 
 After installing the package, you can import the components like this - `import { HorizontalTimeline } from 'react-timeline-components';`
 
